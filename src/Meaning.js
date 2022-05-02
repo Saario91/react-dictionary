@@ -12,22 +12,22 @@ export default function Meaning(props) {
         if(definition.example){
         return (
           <div key={index}>
-            <p>
+            <div>
               <strong>Definition:</strong> {definition.definition}
               <br />
               <em><strong>Example:</strong> {definition.example}</em>
               <Synonyms synonyms={definition.synonyms} />
-            </p>
+            </div>
           </div>
         );}
         else{
           return (
             <div key={index}>
-              <p>
+              <div>
                 <strong>Definition:</strong> {definition.definition}
                 <br />
                 <Synonyms synonyms={definition.synonyms} />
-              </p>
+              </div>
             </div>
           )
         }
